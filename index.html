@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Personal Information</th>
+                </tr>
+
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="lname" name="lname" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="course">Select Course:</label></td>
+                    <td>
+                        <select id="course" name="course">
+                            <option value="cs">Computer Science</option>
+                            <option value="it">Information Technology</option>
+                            <option value="ece">Electronics & Communication</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Hobbies:</label></td>
+                    <td>
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label>
+
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music">Music</label>
+
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><p class="note">* All fields are mandatory</p></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
