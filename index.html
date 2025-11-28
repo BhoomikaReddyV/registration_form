@@ -11,7 +11,7 @@
     <h2>Registration Form</h2>
 
     <div class="form-container">
-        <form action="#" method="post">
+        <form action="submit.php" method="post">
             <table>
                 <tr>
                     <th colspan="2">Personal Information</th>
@@ -50,10 +50,10 @@
                 <tr>
                     <td><label>Gender:</label></td>
                     <td>
-                        <input type="radio" id="male" name="gender" value="male">
+                        <input type="radio" id="male" name="gender" value="Male">
                         <label for="male">Male</label>
 
-                        <input type="radio" id="female" name="gender" value="female">
+                        <input type="radio" id="female" name="gender" value="Female">
                         <label for="female">Female</label>
                     </td>
                 </tr>
@@ -62,9 +62,9 @@
                     <td><label for="course">Select Course:</label></td>
                     <td>
                         <select id="course" name="course">
-                            <option value="cs">Computer Science</option>
-                            <option value="it">Information Technology</option>
-                            <option value="ece">Electronics & Communication</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Electronics & Communication">Electronics & Communication</option>
                         </select>
                     </td>
                 </tr>
@@ -72,13 +72,13 @@
                 <tr>
                     <td><label>Hobbies:</label></td>
                     <td>
-                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <input type="checkbox" id="sports" name="hobbies[]" value="Sports">
                         <label for="sports">Sports</label>
 
-                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <input type="checkbox" id="music" name="hobbies[]" value="Music">
                         <label for="music">Music</label>
 
-                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
                         <label for="reading">Reading</label>
                     </td>
                 </tr>
